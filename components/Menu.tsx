@@ -51,7 +51,7 @@ export function Item({ title, quote, ingredients }: ItemInterface) {
       className=" hover:scale-105 transition-transform duration-300"
     >
       <h2 className="text-4xl">{title}</h2>
-      <h3 className="text-2xl italic">{quote}</h3>
+      <h3 className="text-2xl italic">"{quote}"</h3>
 
       <h5 className="text-lg">
         {ingredients.map((ingredient, index) => (
