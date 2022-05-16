@@ -6,10 +6,8 @@ export function Hero() {
   const Completionist = () => <span>Geen cocktail club op de planning!</span>;
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
-      // Render a completed state
       return <Completionist />;
     } else {
-      // Render a countdown
       return (
         <span className="text-xl md:text-4xl text-center">
           {days} Days {hours} Hours {minutes} Minutes and {seconds} Seconds
