@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Container } from "./Container";
+import { Container } from "../Container";
 
 interface ItemInterface {
   title: string;
   quote: string;
   ingredients: string[];
+  className?: string;
 }
 
 interface MenuInterface {
@@ -22,7 +23,7 @@ export function Menu({ children, font, className }: MenuInterface) {
   return (
     <Container>
       <div
-        className={"py-32 " + className}
+        className={"py-32 px-16 " + className}
         style={{
           fontFamily: font,
         }}
@@ -33,22 +34,29 @@ export function Menu({ children, font, className }: MenuInterface) {
   );
 }
 
-export function Title({ children }) {
+export function Title({ children, className = "" }) {
   return (
-    <div className="w-full text-6xl font-bold py-12">
+    <div className={"w-full text-6xl font-bold py-12 " + className}>
       <h1>{children}</h1>
     </div>
   );
 }
 
-export function Item({ title, quote, ingredients }: ItemInterface) {
+export function Item({
+  title,
+  quote,
+  ingredients,
+  className = "",
+}: ItemInterface) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ amount: 0.5 }}
       transition={{ duration: 0.3 }}
-      className=" hover:scale-105 transition-transform duration-300"
+      className={
+        "hover:scale-105 transition-transform duration-300 " + className
+      }
     >
       <h2 className="text-4xl">{title}</h2>
       <h3 className="text-2xl italic">"{quote}"</h3>
