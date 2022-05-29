@@ -48,7 +48,7 @@ export function ArjanRenataRikMenu() {
           <Menu.Item
             title="Tequila Sunrise"
             className="text-yellow-400"
-            quote="Won't hel you make it till the sunrise"
+            quote="Won't help you make it till the sunrise"
             ingredients={["Tequila", "Orange", "Grenadine"]}
           ></Menu.Item>
           <Menu.Item

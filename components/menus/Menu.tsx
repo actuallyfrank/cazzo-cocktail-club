@@ -23,7 +23,7 @@ export function Menu({ children, font, className }: MenuInterface) {
   return (
     <Container>
       <div
-        className={"py-32 px-16 " + className}
+        className={"py-32 px-4 lg:px-16 " + className}
         style={{
           fontFamily: font,
         }}

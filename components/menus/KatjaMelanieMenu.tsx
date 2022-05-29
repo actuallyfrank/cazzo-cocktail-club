@@ -41,7 +41,7 @@ export function KatjaEnMelanieMenu() {
           ></Menu.Item>
           <Menu.Item
             title="COSMOPOLITAN"
-            quote="VRIENDIN!?! #IkHebGezoendBenIkNuZwanger?"
+            quote="VRIENDIN!?! #Ik Heb Gezoend Ben Ik Nu Zwanger?"
             className="text-shadow text-pink-500 shadow-pink-400"
             ingredients={["Vodka", "Triple Sec", "Cranberry", "Limoen"]}
           ></Menu.Item>
