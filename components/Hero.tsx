@@ -12,6 +12,7 @@ export function Hero() {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute h-full w-full object-cover"
       >
         <source src="/video/cocktail.mp4" type="video/mp4" />
