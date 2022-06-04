@@ -2,14 +2,14 @@ import { Menu } from "./Menu";
 
 export function FrankMenu() {
   return (
-    <div className="bg-gradient-to-tr from-yellow-500 to-pink-600">
+    <div className="bg-gradient-to-tr from-yellow-600 to-pink-700">
       <Menu className="font-bold text-white" font="Caveat">
         <Menu.Title>Frank & Frank</Menu.Title>
         <Menu.Divider />
         <Menu.Grid>
           <Menu.Item
             title="Limoncello spritz"
-            quote="Speciaal voor naar België gereden - Pinokio"
+            quote="Speciaal voor naar België gereden - Pinokkio"
             ingredients={["Cava", "Limoncello", "Spa rood"]}
           ></Menu.Item>
           <Menu.Item

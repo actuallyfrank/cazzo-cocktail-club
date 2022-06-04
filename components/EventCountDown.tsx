@@ -9,7 +9,9 @@ export function EventCountDown() {
     } else {
       return (
         <span className="text-5xl md:text-4xl ">
-          {days} Days <br /> {hours} Hours <br /> {minutes} Minutes <br />
+          {days} Days <br className="md:hidden" /> {hours} Hours{" "}
+          <br className="md:hidden" /> {minutes} Minutes{" "}
+          <br className="md:hidden" />
           {seconds} Seconds
         </span>
       );
