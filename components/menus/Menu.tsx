@@ -15,7 +15,7 @@ interface MenuInterface {
   className?: string;
 }
 
-export function Divider() {
+function Divider() {
   return <hr className="w-full border-t py-4"></hr>;
 }
 
@@ -34,7 +34,7 @@ export function Menu({ children, font, className }: MenuInterface) {
   );
 }
 
-export function Title({ children, className = "" }) {
+function Title({ children, className = "" }) {
   return (
     <div className={"w-full text-6xl font-bold py-12 " + className}>
       <h1>{children}</h1>
@@ -42,12 +42,7 @@ export function Title({ children, className = "" }) {
   );
 }
 
-export function Item({
-  title,
-  quote,
-  ingredients,
-  className = "",
-}: ItemInterface) {
+function Item({ title, quote, ingredients, className = "" }: ItemInterface) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -72,7 +67,7 @@ export function Item({
   );
 }
 
-export function Grid({ children }) {
+function Grid({ children }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-16">{children}</div>
   );
