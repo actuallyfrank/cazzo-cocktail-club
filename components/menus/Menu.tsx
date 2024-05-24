@@ -36,7 +36,7 @@ export function Menu({ children, font, className }: MenuInterface) {
 
 function Title({ children, className = "" }) {
   return (
-    <div className={"w-full text-6xl font-bold py-12 " + className}>
+    <div className={"w-full text-6xl font-bold py-12 px-4 " + className}>
       <h1>{children}</h1>
     </div>
   );
@@ -69,7 +69,7 @@ function Item({ title, quote, ingredients, className = "" }: ItemInterface) {
 
 function Grid({ children }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">{children}</div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 px-4">{children}</div>
   );
 }
 
