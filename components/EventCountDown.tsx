@@ -22,7 +22,7 @@ export function EventCountDown() {
     <Container>
       <div className="flex flex-col md:items-center gap-4 py-20">
         <p className="text-xl md:text-2xl font-bold">Next party starts in: </p>
-        <Countdown date={"2024-05-24T12:00:00"} renderer={renderer}></Countdown>
+        <Countdown date={"2024-05-25T14:00:00"} renderer={renderer}></Countdown>
       </div>
     </Container>
   );
